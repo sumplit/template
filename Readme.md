@@ -11,14 +11,24 @@ Template Maps menggunakan google maps untuk pattern MVVM Kotlin.
 - Siapkan Akun Google untuk mendapatkan Key Google Maps 
 
 - Tambah permissions di Android Manifest
+
+```
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+```
 
 - Tambah di string.xml
 
+```
   <string name="google_maps_api_key" templateMergeStrategy="preserve" translatable="true">api key dari google</string>
+```
 
 - Tambahkan depedencies berikut kedalam gradle
-  
-  implementation 'com.google.android.gms:play-services-maps:11.8.0'
+```
+  dependencies {
+  	...
+  		implementation 'com.google.android.gms:play-services-maps:11.8.0'
+  	...
+	}
+```
