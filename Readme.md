@@ -6,9 +6,15 @@ Template Maps menggunakan google maps untuk pattern MVVM Kotlin.
 
 - Restart Android Studio
 
-## How To Use
+## Cara menggunakan
 
 - Siapkan Akun Google untuk mendapatkan Key Google Maps 
+	
+	buka -> https://console.cloud.google.com/google/maps-apis/overview?hl=ID
+
+	Klik “Get API Key” atau “Dapatkan Kunci”
+
+	Pilih “+ Create a new project”
 
 - Tambah permissions di Android Manifest
 
@@ -32,3 +38,11 @@ Template Maps menggunakan google maps untuk pattern MVVM Kotlin.
   	...
 	}
 ```
+
+- Tambahkan key google maps dimanifest
+```
+	<meta-data
+	    android:name="com.google.android.geo.API_KEY"
+	    android:value="YOU_KEY"/>
+```
+
